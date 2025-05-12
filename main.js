@@ -236,7 +236,29 @@ skal returnere "whao is ohe ptino tf ohis?"
 
 function doubleSwap(string, charA, charB) {
   // Skriv koden for oppgave 4 her
+  let result = "";
+
+  for (let i = 0; i < string.length; i++) {
+    let currentChar = string[i];
+
+    if (currentChar === charA) {
+      result += charB;
+    } else if (currentChar === charB) {
+      result += charA;
+    } else {
+      result += currentChar;
+    }
+  }
+  return result;
 }
+
+console.log(
+  doubleSwap(
+    "+ dr+gon without its rider is + tr+gedy. + rider without their dr+gon is de+d.",
+    "a",
+    "+"
+  )
+);
 
 /******************************************************************************
 5.
